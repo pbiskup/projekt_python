@@ -1,0 +1,22 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    outline: 1px solid #0a6eda;
+    transition: all 0.3s;
+    &--form {
+        background-color: #6a94f7;
+        color: #eae9fd;
+        align-self: end;
+        padding: 8px;
+        &:hover {
+            background-color: #487ef4;
+            color: #e8e8e8;
+        }
+    }
+}

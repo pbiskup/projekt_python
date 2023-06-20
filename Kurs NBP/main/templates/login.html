@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logowanie</title>
-    <link href="" rel="stylesheet" />
-</head>
-<body>
-    <h1>Logowanie</h1>
-    <form action="/dashboard" method="POST">
-        <label for="username">Nazwa użytkownika:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Hasło:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Zaloguj">
-    </form>
-</body>
+    <link href="../assets/css/bundle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="login">
+      <h1 class="login__title">Logowanie</h1>
+      <form class="login__form" action="/dashboard" method="POST">
+        <label class="hide" for="username">Nazwa użytkownika:</label>
+        <input
+          class="login__form__input"
+          type="text"
+          id="username"
+          placeholder="login"
+          name="username"
+          required
+        />
+        <label class="hide" for="password">Hasło:</label>
+        <input
+          class="login__form__input"
+          type="password"
+          id="password"
+          placeholder="hasło"
+          name="password"
+          required
+        />
+        <input class="btn btn--form" type="submit" value="Zaloguj" />
+      </form>
+    </div>
+  </body>
 </html>
