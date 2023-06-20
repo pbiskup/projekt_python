@@ -281,3 +281,121 @@ pre {
   outline: none;
   box-shadow: 0 0 0 4px rgba(233, 245, 253, 0.5);
 }
+
+.page_wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+.page_wrapper .sidenav {
+  background-color: rgba(242, 242, 242, 0.3647058824);
+  height: 100vh;
+  padding-inline: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+.page_wrapper .sidenav__link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+.page_wrapper .sidenav__link:hover {
+  background-color: rgba(155, 155, 155, 0.1);
+  border-radius: 8px;
+}
+.page_wrapper .sidenav__link:hover h3, .page_wrapper .sidenav__link:hover i {
+  color: black;
+}
+.page_wrapper .sidenav__link.active {
+  font-weight: 700;
+  background-color: rgba(155, 155, 155, 0.1);
+  border-radius: 8px;
+}
+.page_wrapper .sidenav__link i {
+  color: black;
+}
+.page_wrapper .sidenav__logo-section {
+  height: 60px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  padding-inline: 14px;
+}
+.page_wrapper .sidenav__logo-section i {
+  color: black;
+}
+.page_wrapper .sidenav__logo-section h1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.page_wrapper .nav_collapse_btn {
+  position: absolute;
+  top: 72px;
+  left: 240px;
+  transition: 250ms ease-out;
+  background-color: #fff;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(155, 155, 155, 0.1);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.page_wrapper .nav_collapse_btn i {
+  color: black;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.page_wrapper .bx {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.page_wrapper h3 {
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.page_wrapper .external_link {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 210px;
+  top: 266px;
+}
+.page_wrapper .main {
+  padding-inline: 32px;
+}
+.page_wrapper .main__header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page_wrapper h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  color: black;
+}
+.page_wrapper p {
+  line-height: 145%;
+  letter-spacing: 0.25px;
+  color: black;
+  margin-bottom: 32px;
+}
+.page_wrapper .chart_container {
+  width: 90%;
+  max-width: 600px;
+  background-color: rgba(155, 155, 155, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid rgba(155, 155, 155, 0.1);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1), 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
