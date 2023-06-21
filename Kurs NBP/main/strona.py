@@ -43,7 +43,7 @@ def login():
 @app.route('/login', methods=['POST'])
 def zaloguj():
     if check_user(request.form['username'], request.form['password']):
-        waluty = ["EUR","GBP","CHF"]
+        waluty = ["EUR","GBP","CHF","USD","CAD","HUF","UAH","JPY","CZK","MXN"]
         for w in waluty:
             url = f"http://api.nbp.pl/api/exchangerates/rates/A/{w}/last/180/"
             response = requests.get(url)
