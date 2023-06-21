@@ -62,7 +62,7 @@ def zaloguj():
             plt.xlabel("Data")
             plt.ylabel("Kurs średni")
             plt.grid(True)
-            plt.savefig(f'main/static/chart{w}.png')  
+            plt.savefig(f'static/chart{w}.png')  
 
         return render_template('dashboard.html')
     else:
