@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="{{ url_for('static', filename='assets/css/Bundle.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="{{ url_for('static', filename='dev/js/index.js') }}"></script>
+    <title>Kursy walut</title>
+    <link href="" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page_wrapper">
+      <div class="sidenav" class="sidenav">
+        <div class="sidenav__header">
+          <div class="sidenav__logo-section">
+            <i class="bx bx-dollar"></i>
+            <h1>Kursy walut</h1>
+          </div>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-1"
+            name="currency"
+            value="EUR"
+            checked
+          />
+          <label for="currency-1" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Euro</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-2"
+            name="currency"
+            value="GBP"
+          />
+          <label for="currency-2" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Funt szterling</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-3"
+            name="currency"
+            value="CHF"
+          />
+          <label for="currency-3" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Frank szwajcarski</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-4"
+            name="currency"
+            value="USD"
+          />
+          <label for="currency-4" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Dolar amerykański</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-5"
+            name="currency"
+            value="CAD"
+          />
+          <label for="currency-5" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Dolar kanadyjski</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-6"
+            name="currency"
+            value="HUF"
+          />
+          <label for="currency-6" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Forint</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-7"
+            name="currency"
+            value="UAH"
+          />
+          <label for="currency-7" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Hrywna ukraińska</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-8"
+            name="currency"
+            value="JPY"
+          />
+          <label for="currency-8" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Jen japoński</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-9"
+            name="currency"
+            value="CZK"
+          />
+          <label for="currency-9" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Korona czeska</h3>
+          </label>
+          <input
+            class="hide js-currency"
+            type="radio"
+            id="currency-10"
+            name="currency"
+            value="MXN"
+          />
+          <label for="currency-10" class="sidenav__label">
+            <i class="bx bx-chart"></i>
+            <h3>Peso meksykańskie</h3>
+          </label>
+        </div>
+      </div>
+
+      <main class="main">
+        <header class="main__header">
+          <div class="text">
+            <h2>Kurs waluty:</h2>
+            <p class="js-currency-name"></p>
+          </div>
+        </header>
+        <div class="chart_container js-currency-chart"></div>
+      </main>
+    </div>
+  </body>
+</html>

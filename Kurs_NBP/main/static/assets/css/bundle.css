@@ -289,6 +289,11 @@ pre {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
+.page_wrapper input[type=radio]:checked + .sidenav__label {
+  font-weight: 700;
+  background-color: rgba(155, 155, 155, 0.1);
+  border-radius: 8px;
+}
 .page_wrapper .sidenav {
   background-color: rgba(242, 242, 242, 0.3647058824);
   height: 100vh;
@@ -298,25 +303,21 @@ pre {
   position: relative;
   justify-content: space-between;
 }
-.page_wrapper .sidenav__link {
+.page_wrapper .sidenav__label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 10px;
   margin-bottom: 2px;
 }
-.page_wrapper .sidenav__link:hover {
+.page_wrapper .sidenav__label:hover {
   background-color: rgba(155, 155, 155, 0.1);
   border-radius: 8px;
 }
-.page_wrapper .sidenav__link:hover h3, .page_wrapper .sidenav__link:hover i {
+.page_wrapper .sidenav__label:hover h3, .page_wrapper .sidenav__label:hover i {
   color: black;
 }
-.page_wrapper .sidenav__link.active {
-  font-weight: 700;
-  background-color: rgba(155, 155, 155, 0.1);
-  border-radius: 8px;
-}
-.page_wrapper .sidenav__link i {
+.page_wrapper .sidenav__label i {
   color: black;
 }
 .page_wrapper .sidenav__logo-section {
@@ -392,7 +393,7 @@ pre {
 }
 .page_wrapper .chart_container {
   width: 90%;
-  max-width: 600px;
+  max-width: 1000px;
   background-color: rgba(155, 155, 155, 0.1);
   border-radius: 12px;
   padding: 30px;

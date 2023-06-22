@@ -4,7 +4,11 @@
   grid-template-columns: 260px 1fr;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
-
+    input[type='radio']:checked + .sidenav__label{
+        font-weight: 700;
+        background-color: rgba(155, 155, 155, .1);
+        border-radius: 8px; 
+    }
     .sidenav {
         background-color: #f2f2f25d;
         height: 100vh;
@@ -13,7 +17,8 @@
         flex-direction: column;
         position: relative;
         justify-content: space-between;
-        &__link {
+        &__label {
+            cursor: pointer;
             display: flex;
             align-items: center;
             padding: 10px;
@@ -24,11 +29,6 @@
                 h3, i {
                 color: black;
                 }
-            }
-            &.active {
-                font-weight: 700;
-                background-color: rgba(155, 155, 155, .1);
-                border-radius: 8px;
             }
             i {
                 color: black;
@@ -120,13 +120,14 @@
         letter-spacing: .25px;
         color: black;
         margin-bottom: 32px;
+        
     }
 
 
 
     .chart_container {
         width: 90%;
-        max-width: 600px;
+        max-width: 1000px;
         background-color: rgba(155, 155, 155, .1);
         border-radius: 12px;
         padding: 30px;

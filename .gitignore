@@ -1,1 +1,14 @@
-Kurs NBP/node_modules
+Kurs_NBP/node_modules
+flask_env
+Kurs_NBP/main/static/chartUSD.png
+Kurs_NBP/main/static/chartUAH.png
+Kurs_NBP/main/static/chartMXN.png
+Kurs_NBP/main/static/chartJPY.png
+Kurs_NBP/main/static/chartHUF.png
+Kurs_NBP/main/static/chartGBP.png
+Kurs_NBP/main/static/chartEUR.png
+Kurs_NBP/main/static/chartCZK.png
+Kurs_NBP/main/static/chartCHF.png
+.gitignore
+Kurs_NBP/main/static/chartCAD.png
+Kurs_NBP/main/users.db
